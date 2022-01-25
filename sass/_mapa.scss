@@ -1,0 +1,17 @@
+/*Gmaps*/
+
+.mapouter {
+    @include medidas(600px , 700px);
+    margin: 25px auto;
+    display: flex;
+
+
+        .gmap_canvas {
+            @include medidas(600px , 700px);
+            display: flex;
+            float: left;
+            overflow: hidden;
+            background: none !important;
+            justify-content: center;
+        }
+}
