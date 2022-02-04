@@ -291,9 +291,9 @@ menu ul li {
 
 .carousel {
   position: relative;
-  margin-block: 150px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-block: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -304,9 +304,9 @@ menu ul li {
 
   .carousel {
     position: relative;
-    margin-block: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-block: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .contenedorgrid {
@@ -350,9 +350,9 @@ menu ul li {
 
   .carousel {
     position: relative;
-    margin-block: 15%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-block: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .contenedorgrid {
