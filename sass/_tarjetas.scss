@@ -1,10 +1,12 @@
 h3 {
     text-align: center;
-    font-size: 20px;
-    margin: 0;
+    font-size: 1rem;
+    margin: 5%;
     padding-top: 10px;
     color: red;
     margin-bottom: 5%;
+ 
+
 }
 
 .galeria {
@@ -43,12 +45,14 @@ h3 {
     transform: translate(0px, -8px);
 }
 .contenido p{
+    font-size: 1rem;
     text-align: center;
     color: white;
     padding-top: 0 8px;
+    display: flex;
 }
 h6{
-font-size: 26px;
+font-size: 1.625rem;
 text-align: center;
 color: white;
 margin:0;
@@ -66,7 +70,7 @@ padding: 0;
     }
 }
 .fa{
-    font-size: 26px;
+    font-size: 1.625rem;
     transition:.4s;
     margin: 3px;
     color:black ;
@@ -80,8 +84,9 @@ padding: 0;
 }
 
 .boton{
+    bottom: 0;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color:red;
     font-weight: bold;
     width: 100%;

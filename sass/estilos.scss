@@ -28,6 +28,21 @@ a {
     color: white;
     padding: 5px;
 }
+.text-center {
+    text-align: center!important;
+    color: white;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+    color: white;
+    
+}
+section.mb-4{
+
+    margin-left: 2%
+}
+
 
 @import "_faq";
 @import "_footer";
@@ -38,11 +53,98 @@ a {
 @import "_contacto";
 @import "carousel";
 
-@media only screen and (max-width:700px) {
+@media only screen and(max-width:320px){
+    .logo_header{
+        @include medidas(4rem, 15rem);
+
+    }
+
     .list-inline-item img {
 
-        width: 75px;
-        height: 75px;
+        width: 4.688rem;
+        height: 4.688rem;
+    }
+    .contenedorgrid {
+        @include medidas(100%, 100%);
+        display: grid;
+        text-align: justify;
+        margin-top: 0%;
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "boxmodel1"
+            "boxmodel2"
+        ;
+    }
+    .boxmodel2 {
+        color: blue;
+        margin-top: -250%;
+    }
+    .mapouter {
+        @include medidas(12rem , 16rem);
+        margin: 25px auto;
+        display: flex;
+    
+    
+            .gmap_canvas {
+                @include medidas(12rem , 16rem);
+                display: flex;
+                float: left;
+                overflow: hidden;
+                background: none !important;
+                justify-content: center;
+            }
+            }
+}
+
+@media only screen and(min-width:321px) and(max-width:480px){
+    .logo_header{
+        @include medidas(4rem, 15rem);
+    }
+
+    .list-inline-item img {
+
+        width: 4.688rem;
+        height: 4.688rem;
+    }
+    .contenedorgrid {
+        @include medidas(100%, 100%);
+        display: grid;
+        text-align: justify;
+        margin-top: 0%;
+        grid-template-columns: 300px;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "boxmodel1"
+            "boxmodel2"
+        ;
+    }
+    .boxmodel2 {
+        color: blue;
+        margin-top: -250%;
+    }
+    .mapouter {
+        @include medidas(15rem , 18rem);
+        margin: 25px auto;
+        display: flex;
+    
+    
+            .gmap_canvas {
+                @include medidas(15rem , 18rem);
+                display: flex;
+                float: left;
+                overflow: hidden;
+                background: none !important;
+                justify-content: center;
+            }
+    }
+}
+
+@media only screen and(min-width:481px) and (max-width:768px) {
+    .list-inline-item img {
+
+        width: 4.688rem;
+        height: 4.688rem;
     }
 
     .carousel {
@@ -67,10 +169,12 @@ a {
 
     .boxmodel1 {
         color: red;
+        
     }
 
     .boxmodel2 {
         color: blue;
+        margin-top: -135%;
     }
 
     h1.titulo {
@@ -82,9 +186,24 @@ a {
         font-size: small;
 
     }
+    .mapouter {
+        @include medidas(20.5rem , 25rem);
+        margin: 25px auto;
+        display: flex;
+    
+    
+            .gmap_canvas {
+                @include medidas(20.5rem , 25rem);
+                display: flex;
+                float: left;
+                overflow: hidden;
+                background: none !important;
+                justify-content: center;
+            }
+    }
 }
 
-@media only screen and (min-width:701px) and (max-width:1080px) {
+@media only screen and(min-width:769px) and (max-width:1024px) {
     body {
         @include medidas(100%, 100%);
         background-size: cover;
@@ -123,7 +242,7 @@ a {
     }
 
     .boxmodel2 {
-        margin-top: 25%;
+        margin-top: -225%;
         margin-left: 25px;
     }
 

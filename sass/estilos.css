@@ -20,6 +20,20 @@ a {
   padding: 5px;
 }
 
+.text-center {
+  text-align: center !important;
+  color: white;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+  color: white;
+}
+
+section.mb-4 {
+  margin-left: 2%;
+}
+
 /*Texto de la página F.A.Q*/
 .contenedorgrid {
   height: 50%;
@@ -35,7 +49,6 @@ a {
 .contenedorgrid p {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-left: 35px;
   text-align: center;
   color: white;
 }
@@ -47,6 +60,7 @@ a {
 
 .boxmodel2 {
   margin-right: 15px;
+  margin-left: 25px;
   grid-area: boxmodel2;
 }
 
@@ -58,31 +72,23 @@ h1.titulo {
 .linkfooter {
   background-color: #212529;
 }
-.linkfooter a:hover {
-  background-color: #212529;
-  background: #01011b;
-  transition: 0, 5s;
-  border-radius: 5px;
-  color: white;
-}
 
 .text-uppercase {
   text-transform: uppercase !important;
   color: red;
   font-size: x-large;
-  margin-left: 35px;
 }
 
 /*Gmaps*/
 .mapouter {
-  height: 600px;
-  width: 700px;
+  height: 37.5rem;
+  width: 43.75rem;
   margin: 25px auto;
   display: flex;
 }
 .mapouter .gmap_canvas {
-  height: 600px;
-  width: 700px;
+  height: 37.5rem;
+  width: 43.75rem;
   display: flex;
   float: left;
   overflow: hidden;
@@ -92,8 +98,8 @@ h1.titulo {
 
 h3 {
   text-align: center;
-  font-size: 20px;
-  margin: 0;
+  font-size: 1rem;
+  margin: 5%;
   padding-top: 10px;
   color: red;
   margin-bottom: 5%;
@@ -137,13 +143,15 @@ h3 {
 }
 
 .contenido p {
+  font-size: 1rem;
   text-align: center;
   color: white;
   padding-top: 0 8px;
+  display: flex;
 }
 
 h6 {
-  font-size: 26px;
+  font-size: 1.625rem;
   text-align: center;
   color: white;
   margin: 0;
@@ -161,7 +169,7 @@ h6 {
 }
 
 .fa {
-  font-size: 26px;
+  font-size: 1.625rem;
   transition: 0.4s;
   margin: 3px;
   color: black;
@@ -177,8 +185,9 @@ h6 {
 }
 
 .boton {
+  bottom: 0;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: red;
   font-weight: bold;
   width: 100%;
@@ -214,6 +223,10 @@ h6 {
   animation: flash 1.5s;
 }
 
+.list-inline-item img {
+  margin-bottom: 5%;
+}
+
 .hover13 figure:hover img {
   opacity: 1;
   -webkit-animation: flash 1.5s;
@@ -247,9 +260,13 @@ h6 {
   transition: box-shadow 0.3s;
 }
 
+.bg-dark .navbar-brand {
+  pointer-events: none;
+}
+
 .logo_header {
-  height: 85.5px;
-  width: 350px;
+  height: 5.344rem;
+  width: 21.875rem;
 }
 
 .navbar-collapse {
@@ -296,10 +313,96 @@ menu ul li {
   margin-right: 5%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 320px) {
+  .logo_header {
+    height: 4rem;
+    width: 15rem;
+  }
+
   .list-inline-item img {
-    width: 75px;
-    height: 75px;
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  .contenedorgrid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    text-align: justify;
+    margin-top: 0%;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "boxmodel1" "boxmodel2";
+  }
+
+  .boxmodel2 {
+    color: blue;
+    margin-top: -250%;
+  }
+
+  .mapouter {
+    height: 12rem;
+    width: 16rem;
+    margin: 25px auto;
+    display: flex;
+  }
+  .mapouter .gmap_canvas {
+    height: 12rem;
+    width: 16rem;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    background: none !important;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .logo_header {
+    height: 4rem;
+    width: 15rem;
+  }
+
+  .list-inline-item img {
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  .contenedorgrid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    text-align: justify;
+    margin-top: 0%;
+    grid-template-columns: 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "boxmodel1" "boxmodel2";
+  }
+
+  .boxmodel2 {
+    color: blue;
+    margin-top: -250%;
+  }
+
+  .mapouter {
+    height: 15rem;
+    width: 18rem;
+    margin: 25px auto;
+    display: flex;
+  }
+  .mapouter .gmap_canvas {
+    height: 15rem;
+    width: 18rem;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    background: none !important;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .list-inline-item img {
+    width: 4.688rem;
+    height: 4.688rem;
   }
 
   .carousel {
@@ -326,6 +429,7 @@ menu ul li {
 
   .boxmodel2 {
     color: blue;
+    margin-top: -135%;
   }
 
   h1.titulo {
@@ -335,8 +439,24 @@ menu ul li {
   p {
     font-size: small;
   }
+
+  .mapouter {
+    height: 20.5rem;
+    width: 25rem;
+    margin: 25px auto;
+    display: flex;
+  }
+  .mapouter .gmap_canvas {
+    height: 20.5rem;
+    width: 25rem;
+    display: flex;
+    float: left;
+    overflow: hidden;
+    background: none !important;
+    justify-content: center;
+  }
 }
-@media only screen and (min-width: 701px) and (max-width: 1080px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     height: 100%;
     width: 100%;
@@ -371,7 +491,7 @@ menu ul li {
   }
 
   .boxmodel2 {
-    margin-top: 25%;
+    margin-top: -225%;
     margin-left: 25px;
   }
 

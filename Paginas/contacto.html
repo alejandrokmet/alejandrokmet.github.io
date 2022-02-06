@@ -30,48 +30,108 @@
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Paginas/productos.html">Productos</a>
+                        <a class="nav-link" href="./productos.html">Productos</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Ayuda
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="../Paginas/faq.html">F.A.Q</a></li>
-                            <li><a class="dropdown-item" href="../Paginas/contacto.html">Contacto</a></li>
-                            <li><a class="dropdown-item" href="../Paginas/direccion.html">Nuestra Ubicacion</a></li>
-
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./faq.html">Preguntas frecuentes</a>
                     </li>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="./direccion.html">Nuestra Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Busqueda de productos"
-                        aria-label="Busqueda de productos">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+            </li>
+
+        </ul>
+
             </div>
         </div>
     </nav>
-    <div class="contacto">
-        <form action="enviar.php" method="post" enctype="application/x-www-form-urlencoded">
-            <h2>Contacto</h2><br><br>
-            Nombre <input type="text" required> <br><br>
-            Email <input type="email" required> <br><br>
-            Estado Civil: <select name="Estado Civil"><br><br>
-                <option>Soltero</option>
-                <option>Casado</option>
-                <option>Prefiero no decirlo</option>
-            </select><br><br>
-            <textarea name="areadetexto" id="" cols="30" rows="5" placeholder="Dejanos tus comentarios"></textarea> <br>
-            <h2>¿Deseas recibir nuestras ofertas?</h2>
-            Si <input type="checkbox"><br>
-            No <input type="checkbox"><br>
-            Borrar datos <input type="reset" value="borrar"><br><br>
-            <input type="submit" value="Enviar">
-        </form>
+
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contactate con nosotros o dejanos tu opinión</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5"> Dejá tu consulta o sugerencia y a la brevedad te responderemos</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-4 col-md-offset-4">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre</label>
+                        </div>
+                    </div>
+            
+                    <!--Grid column-->
+
+                </div>
+                <br>
+                <!--Grid row-->
+                <div class="row justify-content-center">
+                    <div class="col-md-12 ml-auto">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--Grid row-->
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!--Grid row-->
+                <div class="row justify-content-center">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Dejá tu mensaje</label>
+                        </div>
+
+                    </div>
+                </div>
+            
+                <!--Grid row-->
+
+            </form>
+            <br>
+            <div class="text-left text-md-left">
+                <a class="btn btn-primary">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+    
+        <!--Grid column-->
+
     </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+
+    
     <!-- Footer -->
     <footer class="page-footer font-small stylish-color-dark pt-4">
         <!-- Call to action -->
@@ -121,18 +181,18 @@
 
                     <ul class="list-unstyled">
                         <li>
-                            <a href="https://www.facebook.com"><img
+                            <a href="https://www.facebook.com"target="_blank"><img
                                     src="../imagenes/facebook-logo-vector-11549681702ifmdelo1oi-removebg-preview.png"
                                     class="facebook" width="30px" height="30px"> </a>
                         </li>
                         <br>
                         <li>
-                            <a href="https://twitter.com/home"><img src="../imagenes/twitter-logo-4.png" class="twitter"
+                            <a href="https://twitter.com/home"target="_blank"><img src="../imagenes/twitter-logo-4.png" class="twitter"
                                     width="25px" height="25px"> </a>
                         </li>
                         <br>
                         <li>
-                            <a href="https://www.instagram.com/?hl=es-la"><img
+                            <a href="https://www.instagram.com/?hl=es-la"target="_blank"><img
                                     src="../imagenes/instagram-logo-removebg-preview.png" class="instagram" width="30px"
                                     height="30px"></a>
                         </li>

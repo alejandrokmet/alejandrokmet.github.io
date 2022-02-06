@@ -12,9 +12,13 @@
         }
     }
 }
+.bg-dark .navbar-brand{
+    pointer-events:none;
+
+}
 
 .logo_header {
-    @include medidas(85.5px, 350px);
+    @include medidas(5.344rem, 21.875rem);
 }
 .navbar-collapse {
     font-size: x-large;
